@@ -178,9 +178,10 @@ button img {
 /* POPUP */
 
 .overlay {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    z-index: 9999;
     top: 0;
     left: 0;
     background-color: rgba(22, 44, 78, .6);
