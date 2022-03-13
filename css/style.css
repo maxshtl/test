@@ -329,9 +329,8 @@ button img {
         left: -10px;
     }
     #cloud-right{
-        transform: scale(.7) rotate(-5deg);
-        top: -15px;
-        right: -10px;
+        transform-origin: top right;
+        transform: scale(.5, -.65) rotate(90deg);
     }
     .logo {
         margin-top: 20%;
