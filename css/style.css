@@ -1,0 +1,359 @@
+:root {
+    --main-color: #162C4E;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CLEAR */
+
+* {
+    text-align: center;
+    font-family: 'poppinsregular', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    border: none;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+body {
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}
+
+/* BACK */
+
+.clouds {
+    text-align: justify;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: -100;
+}
+#cloud-left {
+    position: absolute;
+    left: 0;
+}
+#cloud-right {
+    position: absolute;
+    right: 0;
+}
+
+/* MAIN */
+
+.logo {
+    margin-top: 5%;
+}
+h1 {
+    font-family: 'poppinsbold';
+    font-size: 72px;
+    color: var(--main-color);
+    opacity: 39%;
+    margin-top: 5%;
+    line-height: 104%;
+}
+.text {
+    margin:auto;
+    width: 423px;
+    line-height: 150%;
+}
+
+/* TIMER */
+
+.timer table{
+    width: 588px;
+    margin: 30px auto 0;
+}
+.countdown-time {
+    font-size: 72px;
+    font-family: 'poppinssemibold';
+    color: var(--main-color);
+}
+.timer td div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer img {
+    position: relative;
+}
+.names span {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+}
+.short-text { 
+    display: none; 
+}
+
+/* EVENT */
+
+.event-pg{
+    margin: 5% auto;
+    text-align: center;
+}
+.event-btn{
+    width: 240px;
+    height: 60px;
+    margin: 10px auto;
+    display: flex;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+}
+.event-btn span {
+    position: relative;
+    left: -20px;
+}
+.event-btn img {
+    position: relative;
+    right: -20px;
+    top: -2px;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    bottom: 0;
+    height: 192px;
+    background-color: var(--main-color);
+    align-items: center;
+    justify-content: center;
+}
+form {
+    height: 59px;
+    width: 440px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: relative;
+    border-radius: 40px;
+    font-family: 'roboto';
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    padding-left: 20px;
+}
+.email-btn {
+    position: relative;
+    top: -50px;
+    left: 190px;
+    background-color: #DF2224;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    border: none;
+    cursor: pointer;
+}
+button img {
+    margin-top: 3px;
+}
+
+/* POPUP */
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(22, 44, 78, .6);
+    display: none;
+}
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 370px;
+    background-color: white;
+    justify-content: center;
+}
+.popup-header {
+    font-family: 'poppinsbold';
+    font-size: 36px;
+    position: relative;
+    top: 30%;
+}
+.popup-text {
+    top: 38%;
+    font-size: 16px;
+    line-height: 150%;
+    width: 280px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+.popup-close-btn {
+    position: relative;
+    margin: auto;
+    top: 45%;
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+.popup-close::before {
+    content: '';
+    background-color: #135978;
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    top: 11px;
+    left: -4px;
+    transform: rotate(-45deg);
+}
+.popup-close::after {
+    content: '';
+    background-color: #135978;
+    position: absolute;
+    height: 1px;
+    width: 31px;
+    top: 11px;
+    left: -4px;
+    transform: rotate(45deg);
+}
+
+/* ADAPTATION */
+
+@media screen and (max-width: 768px){
+    * {
+        font-size: 16px;
+    }
+    #cloud-left{
+        transform-origin: top left;
+        transform: scale(.5);
+        top: 0;
+    }
+    #cloud-right{
+        transform-origin: top right;
+        transform: scale(.7);
+        top: 0;
+    }
+    .logo {
+        margin-top: 15%;
+    }
+    h1 {
+        margin-top: 20%;
+        font-size: 36px;
+    }
+    .text {
+        width: 286px;
+        margin-top: 20px;
+    }
+    .timer{
+        width: 358px;
+        margin: 20px auto;
+        display: flex;
+    }
+    .countdown-time {
+        font-size: 36px;
+    }
+    .names img {
+        width: 64px;
+        height: 40px;
+    }
+    .names span {
+        font-size: 12px;
+    }
+    .short-text {
+        display: inline-block; 
+    }
+    .full-text { 
+        display: none; 
+    }
+    .event-pg {
+        margin: 5% auto 25%;
+    }
+    footer {
+        height: 160px;
+    }
+    form {
+        width: 360px;
+        height: 41px;
+    }
+    input {
+        font-size: 14px;
+    }
+    .email-btn {
+        width: 33px;
+        height: 33px;
+        top: -38px;
+        left: 158px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #cloud-left{
+        transform: scale(.4);
+        top: -30px;
+        left: -10px;
+    }
+    #cloud-right{
+        transform: scale(.7) rotate(-5deg);
+        top: -15px;
+        right: -10px;
+    }
+    .logo {
+        margin-top: 20%;
+        width: 128px;
+    }
+    .timer{
+        width: 320px;
+        margin-top: 15px;
+    }
+    .event-pg{
+        margin-top: 10%;
+    }
+    footer {
+        height: 141px;
+    }
+    form {
+        width: 280px;
+    }
+    .email-btn {
+        top: -37px;
+        left: 117px;
+    }
+}

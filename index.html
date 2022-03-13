@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="clouds">
+            <img id="cloud-left" src="img/Vector.svg"></img>
+            <img id="cloud-right" src="img/Vector-1.svg"></img>
+        </div>
+
+        <a href="index.html"><img class="logo" src="img/logo.svg"></a>
+
+        <h1>UNDER CONSTRUCTION</h1>
+        <div class="text">We're making lots of improvements and will be back soon</div>
+        
+        <div class="timer">
+            <table>
+                <tr class="countdown" id="countdown">
+                    <td>
+                        <span class="day countdown-time"></span>
+                    </td>
+                    <td class="countdown-time">:</td>
+                    <td>
+                        <span class="hour countdown-time"></span>
+                    </td>
+                    <td class="countdown-time">:</td>
+                    <td>
+                        <span class="minute countdown-time"></span>
+                    </td>
+                    <td class="countdown-time">:</td>
+                    <td>
+                        <span class="second countdown-time"></span>
+                    </td>
+                </tr>
+                <tr class="names">
+                    <td>
+                        <div>
+                            <img src="img/red_cloud.svg">
+                        <span class="full-text">Days</span>
+                        <span class="short-text">DD</span>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td> 
+                        <div>
+                            <img src="img/red_cloud.svg">
+                        <span class="full-text">Hours</span>
+                        <span class="short-text">HH</span>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div>
+                            <img src="img/red_cloud.svg">
+                        <span class="full-text">Minutes</span>
+                        <span class="short-text">MM</span>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div>
+                            <img src="img/red_cloud.svg">
+                        <span class="full-text">Seconds</span>
+                        <span class="short-text">SS</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="event-pg">
+            <span style="line-height: 150%;">Check our event page when you wait:</span>
+            <button type="button"
+                onclick="location.href='https://rabota.by/resume/6d1db5abff09be6a8a0039ed1f646e6c455844'"
+                class="event-btn">
+                <span>Go to the event</span>
+                <img src="img/arrow-right.svg">
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <form action="#" method="post">
+            <input type="email" placeholder="Enter your Email and get notified" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <button class="email-btn" type="submit"><img src="img/arrow-right.svg"></button>
+        </form>
+    </footer>
+
+    <div class="overlay">
+        <div class="popup">
+            <h2 class="popup-header">SUCCESS!</h2>
+            <span class="popup-text">You have successfully subscribed to the email newsletter</span>
+            <button type="button" class="popup-close-btn">Close</button>
+            <div class="popup-close"></div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+
+</html>
