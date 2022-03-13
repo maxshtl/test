@@ -48,6 +48,8 @@ body {
 }
 #cloud-right {
     position: absolute;
+    transform-origin: top right;
+    transform: scale(1.1);
     right: 0;
 }
 
